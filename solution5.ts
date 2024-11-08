@@ -6,9 +6,10 @@
 
     type GetPropertyFn = <T, K extends keyof T>(inputObject: T, inputObjectKey: K) => T[K];
 
-
     const getProperty: GetPropertyFn = (inputObject, inputObjectKey) => {
+
         return inputObject[inputObjectKey];
+        
     };
 
 

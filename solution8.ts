@@ -5,7 +5,7 @@
 
     const validateKeys = <T extends object>(inputObject: T, keysOfInputObject: (keyof T)[]): boolean => {
     
-        return keysOfInputObject.every((keyOfInputObject) => keyOfInputObject in inputObject);
+        return  keysOfInputObject.every((keyOfInputObject) => keyOfInputObject in inputObject);
     };
 
         

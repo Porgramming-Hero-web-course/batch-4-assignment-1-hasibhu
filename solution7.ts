@@ -17,7 +17,7 @@
 
         getCarAge() {
             const currentYear = new Date().getFullYear()
-
+            
             if (this.year > currentYear) {
                 console.log("Future date is not possible as a car production year.");
             } else {

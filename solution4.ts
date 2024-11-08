@@ -6,20 +6,17 @@
 
     type Circle = {
         shape: 'circle';
-        radius: number
+        radius: number;
     };
     
     type Rectangle = {
         shape: 'rectangle';
         width: number;
-        height: number
-
+        height: number;
     };
 
 
     type Shape = Circle | Rectangle;
-
-
 
 
     const calculateShapeArea = (inputForShape: Shape) : number => {

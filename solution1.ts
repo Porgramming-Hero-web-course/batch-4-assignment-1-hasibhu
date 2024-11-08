@@ -5,7 +5,7 @@
   
     const sumArray = (numberOfArray: number[]): number => {
         
-        const sumofArray = numberOfArray.reduce((summ, currentNumber) => summ + currentNumber, 0)
+        const sumofArray = numberOfArray.reduce((summ, currentNumber) => summ + currentNumber, 0);
 
         return sumofArray;
     }

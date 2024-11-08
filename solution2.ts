@@ -16,7 +16,8 @@
         return uniqueNumbers;
     }
 
-    console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 7, 3, 7, 5]));
+    // testing sample 
+    // console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 7, 3, 7, 5]));
 
 
 

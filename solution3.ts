@@ -16,6 +16,7 @@
 
 
         for (let i = 0; i < senSplit.length; i++){
+            
             if (senSplit[i].toLowerCase() === word.toLowerCase()) {
                 wordCount += 1;
             }

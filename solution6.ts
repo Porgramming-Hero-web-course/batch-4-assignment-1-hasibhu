@@ -12,12 +12,13 @@
         
     const updateProfile = (profileInput: Profile, updates: Partial<Profile>): Profile => {
     
-        // this if part has been added as per question input mentioned only 1 update input. Deactivating this if part will allow multiple update input 
+        // this if part has been added as per question input mentioned only 1 update input will work. Deactivating this if part will allow multiple update inputs.  
         if (Object.keys(updates).length > 1 || Object.keys(updates).length<1) {
             console.log("Error: Only single key-value pair is accepted in the second argument.");
             return profileInput;
         }
 
+        
         const x = Object.keys(updates)[0]
         let profileKeys: string[] = Object.keys(profileInput);
 
