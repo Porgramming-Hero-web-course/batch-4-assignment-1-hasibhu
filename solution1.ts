@@ -3,7 +3,6 @@
 
 {
   
-
     const sumArray = (numberOfArray: number[]): number => {
         
         const sumofArray = numberOfArray.reduce((summ, currentNumber) => summ + currentNumber, 0)
@@ -12,6 +11,8 @@
     }
 
 
+    // Testing input
+    
     // console.log(sumArray([1, 2, 3, 4, 5]));
     // console.log(sumArray([10, 20, 30, 40, 50]));
 }

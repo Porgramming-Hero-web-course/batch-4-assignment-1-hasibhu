@@ -1,6 +1,8 @@
 
 
 {
+    //
+
 
     type Circle = {
         shape: 'circle';
@@ -14,7 +16,10 @@
 
     };
 
+
     type Shape = Circle | Rectangle;
+
+
 
 
     const calculateShapeArea = (inputForShape: Shape) : number => {
@@ -29,16 +34,20 @@
     }
 
 
+
     const circleInput: Shape = {
         shape: 'circle',
         radius: 5
     }
+
     const rectangleInput: Shape = {
         shape: 'rectangle',
         width:10,
         height: 12
     }
 
+
+    // testing input 
     // call function with objects 
     // console.log(calculateShapeArea(circleInput));
     // console.log(calculateShapeArea(rectangleInput));
@@ -51,6 +60,7 @@
     //     }
     // ));
 
+    //
 
 
 }

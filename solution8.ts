@@ -2,28 +2,20 @@
     //
     
 
-    // interface Profile {
-    //     name: string;
-    //     age: number;
-    //     email: string;
-    // }
 
-    // type InputObject<T> = <T>
-    // type InputKey<T> = 
-
-    const validateKeys = <T extends object>(obj: T, keys: (keyof T)[]): boolean => {
+    const validateKeys = <T extends object>(inputObject: T, keysOfInputObject: (keyof T)[]): boolean => {
     
-        return keys.every((key) => key in obj);
+        return keysOfInputObject.every((keyOfInputObject) => keyOfInputObject in inputObject);
     };
 
         
         
     // Test cases
-    const person = { name: "Alice", age: 25, email: "alice@example.com" };
+    // const person = { name: "Alice", age: 25, email: "alice@example.com" };
 
     // Valid keys
-    console.log(validateKeys(person, ["name", "age"])); // Output: true
-    console.log(validateKeys(person, ["email"])); // Output: true
+    // console.log(validateKeys(person, ["name", "age"]));
+    // console.log(validateKeys(person, ["email"]));
 
 
 

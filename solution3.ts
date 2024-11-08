@@ -1,6 +1,6 @@
 {
 
-
+//
 
     const countWordOccurrences = (sentence: string, word: string): number => {
         
@@ -13,14 +13,6 @@
         console.log('Please insert only 1 word in 2nd argument.');
         return 0; 
         }
-
-
-
-        // for (let senSplt of senSplit) {
-        //     if (senSplt.toLowerCase() === word.toLowerCase()) {
-        //         wordCount += 1;
-        //     }
-        // }
 
 
         for (let i = 0; i < senSplit.length; i++){
@@ -36,8 +28,9 @@
     }
 
 
+    // testing input 
 
-    // console.log(countWordOccurrences("TypeScript is great. I love TypeScript!", "typescript"));
+    // console.log(countWordOccurrences("TypeScript is great. I love TypeScript", "typescript"));
 
     
 
@@ -45,6 +38,6 @@
 
 
 
-
+//
 
 }

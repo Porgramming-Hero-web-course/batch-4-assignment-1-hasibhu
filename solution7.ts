@@ -1,5 +1,7 @@
 {
 
+    //
+
 
     class Car {
         make: string;
@@ -15,15 +17,23 @@
 
         getCarAge() {
             const currentYear = new Date().getFullYear()
-            console.log(currentYear-this.year);
+
+            if (this.year > currentYear) {
+                console.log("Future date is not possible as a car production year.");
+            } else {
+                console.log(currentYear - this.year);
+            }
         }
 
 
 
     }
+
+
+    // testing input 
     
-        const car = new Car("Honda", "Civic", 2018);
-        car.getCarAge();
+        // const car = new Car("Honda", "Civic", 2007);
+        // car.getCarAge();
 
 
 
@@ -32,33 +42,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //
 
 }
